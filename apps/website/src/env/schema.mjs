@@ -2,7 +2,7 @@
 import { z } from "zod";
 
 /**
- * Specify your server-side environment variables schema here.
+ * Specify your chatbot-side environment variables schema here.
  * This way you can ensure the app isn't built with invalid env vars.
  */
 export const serverSchema = z.object({
@@ -52,7 +52,7 @@ export const clientSchema = z.object({
  * @type {{ [k in keyof z.infer<typeof clientSchema>]: z.infer<typeof clientSchema>[k] | undefined }}
  */
 export const clientEnv = {
-  NEXT_PUBLIC_NODE_ENV: process.env.NODE_ENV ?? 'development',
+  NEXT_PUBLIC_NODE_ENV: process.env.NODE_ENV ?? "development",
   NEXT_PUBLIC_WEB_PUSH_VAPID_PUBLIC_KEY:
     process.env.NEXT_PUBLIC_WEB_PUSH_VAPID_PUBLIC_KEY,
   NEXT_PUBLIC_COOKIEBOT_ID: process.env.NEXT_PUBLIC_COOKIEBOT_ID,

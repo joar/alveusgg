@@ -33,7 +33,7 @@ dependencies:
   '@next-auth/prisma-adapter': 1.0.5_64qbzg5ec56bux2misz3l4u6g4
   '@prisma/client': 4.7.1_prisma@4.7.1
   '@tanstack/react-query': 4.20.2_biqbaboplfbrettd7655fr4n2y
-  '@trpc/client': 10.5.0_@trpc+server@10.5.0
+  '@trpc/client': 10.5.0_@trpc+chatbot@10.5.0
   '@trpc/next': 10.5.0_g2pmjoa4izano73u2fxf6anina
   '@trpc/react-query': 10.5.0_ujqebui43qs7rddibf3kooeqqu
   '@trpc/server': 10.5.0
@@ -349,7 +349,7 @@ packages:
       react-dom: '>=16.8.0'
     dependencies:
       '@tanstack/react-query': 4.20.2_biqbaboplfbrettd7655fr4n2y
-      '@trpc/client': 10.5.0_@trpc+server@10.5.0
+      '@trpc/client': 10.5.0_@trpc+chatbot@10.5.0
       '@trpc/react-query': 10.5.0_ujqebui43qs7rddibf3kooeqqu
       '@trpc/server': 10.5.0
       next: 13.0.2_biqbaboplfbrettd7655fr4n2y
@@ -368,7 +368,7 @@ packages:
       react-dom: '>=16.8.0'
     dependencies:
       '@tanstack/react-query': 4.20.2_biqbaboplfbrettd7655fr4n2y
-      '@trpc/client': 10.5.0_@trpc+server@10.5.0
+      '@trpc/client': 10.5.0_@trpc+chatbot@10.5.0
       '@trpc/server': 10.5.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0

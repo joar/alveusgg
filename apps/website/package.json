@@ -1,5 +1,5 @@
 {
-  "name": "alveusgg-website",
+  "name": "@alveusgg/website",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,11 +9,12 @@
     "dev:push-sw": "tsup --watch --config push-sw.tsup.config.ts",
     "build": "run-s build:next build:push-sw",
     "dev": "run-p dev:*",
-    "postinstall": "prisma generate",
+    "postinstall": "../../packages/database/prisma generate",
     "lint": "next lint",
     "start": "next start"
   },
   "dependencies": {
+    "@alveusgg/database": "workspace:*",
     "@headlessui/react": "^1.7.10",
     "@heroicons/react": "^2.0.15",
     "@next-auth/prisma-adapter": "^1.0.5",

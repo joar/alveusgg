@@ -9,8 +9,8 @@
 /public/push/alveus/*
 
 # database
-/prisma/db.sqlite
-/prisma/db.sqlite-journal
+/packages/database/prisma/db.sqlite
+/packages/database/prisma/db.sqlite-journal
 
 # next.js
 /.next/
