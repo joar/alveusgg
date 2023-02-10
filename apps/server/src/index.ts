@@ -1,14 +1,18 @@
 import type { Express, Request, Response } from "express";
 import express from "express";
-import dotenv from "dotenv";
+import * as dotenv from "dotenv";
+
+import { prisma } from "./db/client";
 
 dotenv.config();
 
 const app: Express = express();
 const port = process.env.PORT;
 
-app.get("/", (req: Request, res: Response) => {
-  res.send("Express + TypeScript Server");
+app.get("/", async (req: Request, res: Response) => {
+  const lastUpdate = await prisma.channelUpdateEvent.findFirst();
+
+  res.send("Server is running! Last Update: " + lastUpdate?.title);
 });
 
 app.listen(port, () => {

@@ -1,3 +1,4 @@
 # database
 /prisma/db.sqlite
 /prisma/db.sqlite-journal
+*.js

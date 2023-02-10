@@ -1,6 +1,6 @@
 {
   "name": "@alveusgg/database",
-  "main": "./index.ts",
+  "main": "./index.js",
   "types": "./index.ts",
   "dependencies": {
     "@prisma/client": "^4.10.1"
